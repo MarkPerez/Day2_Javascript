@@ -5,10 +5,11 @@ window.addEventListener('load', activate, false);
 var text = "";
 var counter = 1;
 function activate(){
-    while (counter <= 10) {
+    do {
         text += "The number is " + counter + "<br>";
         counter++;
-    }
+    } 
+    while (counter <= 10);
     document.getElementById("demo").innerHTML = text;
 
 }
